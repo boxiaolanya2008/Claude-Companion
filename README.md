@@ -48,6 +48,7 @@ npm run build
   "mcpServers": {
     "claude-companion": {
       "command": "node",
+      // 这里要换成你自己的路径
       "args": ["C:\\Users\\31702\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\claude-companion\\dist\\mcp\\run-server.js"],
       "env": {
         "NODE_PATH": "C:\\Users\\31702\\AppData\\Roaming\\npm\\node_modules"
@@ -171,15 +172,10 @@ try {
 if (!items || items.length === 0) {
   return [];
 }
-```
-
-详细说明请查看 [CODE_STYLE_GUIDE.md](CODE_STYLE_GUIDE.md)
-
----
 
 ## 🎨 UI 美化架构
 
-对于界面相关的请求，Companion 会自动应用 Material Design 风格：
+对于界面相关的请求，Companion 会自动应用 Material Design 风格 (来自Gemini-Cli System-Prompt)：
 
 ### 设计原则
 
@@ -239,7 +235,7 @@ if (!items || items.length === 0) {
 
 ### 记忆存储
 
-所有记忆保存在 `./ModelMem` 目录：
+所有记忆保存在当前项目的 `./ModelMem` 目录中：
 
 ```
 ModelMem/
@@ -344,18 +340,6 @@ npm test
 # 代码检查
 npm run lint
 ```
-
----
-
-## 📚 文档
-
-- [AUTO_CALL_GUIDE.md](AUTO_CALL_GUIDE.md) - 自动调用架构使用指南
-- [CODE_STYLE_GUIDE.md](CODE_STYLE_GUIDE.md) - 代码风格指南
-- [AESTHETICS_GUIDE.md](AESTHETICS_GUIDE.md) - UI 美化架构指南
-- [COMMUNICATION.md](COMMUNICATION.md) - 通信方式说明
-- [CLAUDE_CODE_INTEGRATION.md](CLAUDE_CODE_INTEGRATION.md) - Claude Code 集成指南
-
----
 
 ## 🎯 使用示例
 
