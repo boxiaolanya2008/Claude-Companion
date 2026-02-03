@@ -1,6 +1,6 @@
 # Claude Companion
 
-> 智能AI助手扩展架构 - 让 Claude Code 更强大
+> 智能AI助手扩展 Mcp 架构 - 让 Claude Code 更强大
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
