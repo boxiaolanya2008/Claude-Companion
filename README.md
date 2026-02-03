@@ -48,7 +48,7 @@ npm run build
   "mcpServers": {
     "claude-companion": {
       "command": "node",
-      // 这里要换成你自己的路径
+      // 替换成你的Mcp服务器路径
       "args": ["C:\\Users\\31702\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\claude-companion\\dist\\mcp\\run-server.js"],
       "env": {
         "NODE_PATH": "C:\\Users\\31702\\AppData\\Roaming\\npm\\node_modules"
